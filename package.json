@@ -1,0 +1,32 @@
+{
+  "name": "se-school-lab",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "test": "NODE_OPTIONS=--experimental-vm-modules jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Kharacternyk/se-school-lab.git"
+  },
+  "author": "Nazar Vinnichuk",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Kharacternyk/se-school-lab/issues"
+  },
+  "homepage": "https://github.com/Kharacternyk/se-school-lab#readme",
+  "dependencies": {
+    "@coinpaprika/api-nodejs-client": "^1.2.0",
+    "bcrypt": "^5.0.1",
+    "express": "^4.17.1",
+    "jsonwebtoken": "^8.5.1"
+  },
+  "devDependencies": {
+    "eslint": "^7.29.0",
+    "fast-check": "^2.17.0",
+    "jest": "^27.0.5",
+    "supertest": "^6.1.3"
+  }
+}
