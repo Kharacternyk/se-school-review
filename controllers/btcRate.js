@@ -1,15 +1,11 @@
-import Coinpaprika from "@coinpaprika/api-nodejs-client";
+import BtcRateService from "../services/btcRate.js";
 
-const coinpaprika = new Coinpaprika();
+const btcRateService = new BtcRateService();
 
 export default async function(request, response) {
-    const rate = (await coinpaprika.getAllTickers({
-        coinId: "btc-bitcoin",
-        quotes: ["UAH"],
-    })).quotes.UAH.price;
     const data = {
         user: request.user,
-        rate: rate,
+        rate: await btcRateService.btcRate,
     };
     response.json(data);
 }
